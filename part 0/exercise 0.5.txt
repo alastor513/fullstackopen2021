@@ -1,0 +1,26 @@
+title Part 0 Exercise 0.5
+
+	Browser->Server: HTML GET https://studies.cs.helsinki.fi/exampleapp/spa
+	Server-->Browser: HTML CODE
+
+	Browser->Server: HTML GET https://studies.cs.helsinki.fi/exampleapp/main.css
+	Server-->Browser: main.css
+
+	note over Browser:
+	The browser gets the javascript 
+	code from the spa.js file and run it
+	end note
+
+	Browser->Server: HTML GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+	Server-->Browser: JS CODE spa.js
+
+	note over Browser:
+	The browser gets the data from the json file 
+	and displays the content on the screen
+	end note
+
+	Browser->Server: HTML GET https://studies.cs.helsinki.fi/exampleapp/data.json
+	Server-->Browser: ALL CONTENT FROM data.json
+
+	Browser->Server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+	Server-->Browser: favicon.ico
