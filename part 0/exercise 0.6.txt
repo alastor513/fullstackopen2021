@@ -1,0 +1,14 @@
+title Part 0 Exercise 0.6
+
+	Browser->Server: HTML post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+	Server-->Browser: {content: "hi", date: "2021-10-04T10:45:52.170Z"}
+
+	note over Browser:
+
+	The browser sends the data with 
+	the post method and the 
+	server returns the registered 
+	data and adds it to the list 
+	shown on the screen.
+
+	end note
