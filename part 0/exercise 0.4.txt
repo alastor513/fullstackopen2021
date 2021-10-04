@@ -1,0 +1,29 @@
+title part0 exercise 0.4
+
+	Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+	Server-->Browser: HTTP CODE from notes
+
+	note over Browser: 
+	the browser sends the data to the server, 
+	accepts it and sends a refresh response
+	end note
+
+	Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+	Server-->Browser: HTML CODE
+
+	Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+	Server->Browser: main.css
+
+	Browser-->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+	Server-->Browser : main.js
+
+	note over Browser:
+	the browser gets the javascrip code 
+	and starts reading the jason document
+	end note 
+
+	Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+	Server->Browser: {content: 'hi from spain', date: '2021-10-04T09:19:24.754Z'}
+
+	Browser->Server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+	Server-->Browser: HTML CODE
