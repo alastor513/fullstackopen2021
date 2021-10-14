@@ -92,27 +92,8 @@ const Statics =(props) =>{
    </div>
   )
 }
-/*<tr>
-      <td>Good: </td>
-      <td>Neutral: </td>
-      <td>Bad: </td>
-      <td>All: </td>
-      <td>Averange: </td>
-      <td>Positive: </td>
-    </tr>
-    <tr>
-      <td><Content total={props.good}></Content></td>
-      <td><Content total={props.neutral}></Content></td>
-      <td><Content total={props.bad}></Content></td>
-      <td><All good={props.good} neutral={props.neutral} bad={props.bad}></All></td>
-      <td><Averange good={props.good} neutral={props.neutral} bad={props.bad}></Averange></td>
-      <td><Positive good={props.good} neutral={props.neutral} bad={props.bad}></Positive></td>  
-    </tr>*/
-
-
 
 const App = () => {
-  // save clicks of each button to its own state
   
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
